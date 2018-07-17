@@ -1,0 +1,963 @@
+<section class="bkf-layout" id="seat-layout" style="display: block;">
+		<div class="coupons_overlay"></div>
+		<div class="coupons_intrc win-intrc" style="display:none;">
+			<img id="web-coch">
+		</div>
+		<div class="container">
+		<header class="bkf-header">
+			<span id="disback" onclick="fnClCallout()" class="st-back-btn">
+				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+					<use xlink:href="/icons/common-icons.svg#icon-go-back"></use>
+				</svg>
+			</span>
+			<div class="header-container">
+				<h2>
+					<!-- Event name -->
+					<span class="__event-name"><a id="strEvtName" href="/movies/sanju/ET00063643">Sanju</a></span>
+					<span class="icon-a" id="sen_a" style="display: none;">
+						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+							<use xlink:href="/icons/common-icons.svg#icon-a"></use>
+						</svg>
+					</span>
+					<span class="icon-u" id="sen_u" style="display: none;">
+						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+							<use xlink:href="/icons/common-icons.svg#icon-u"></use>
+						</svg>
+					</span>
+					<span class="icon-ua" id="sen_ua" style="display: inline-block;">
+						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+							<use xlink:href="/icons/common-icons.svg#icon-ua"></use>
+						</svg>
+					</span>
+				<!-- Event details such as venue name and timing -->
+					<span class="__event-details">
+						<span id="strVenName">PVR: Treasure Island, Bhilai</span>
+					</span>
+				</h2>
+
+
+				<!-- Event componets such as quantity and showtimes -->
+				
+				<div class="right-evt-component">
+					<div class="event-components" id="evcomp">
+						<div id="mob-qty" class="mob-btn" onclick="javascript:BMS.Misc.modal('qty-sel', 1);">No. OF TICKETS | <span id="mobintQty">1</span></div>
+						<div id="mob-stm" class="mob-btn" onclick="javascript:BMS.Misc.modal('show-sel', 1);">SHOWTIMES</div>
+						<div></div>
+						<div class="no-of-tickets" onclick="javascript:BMS.Misc.modal('qty-sel', 1);$('.__seat-action').hide();">
+							<span id="intQty">1</span>
+							<span id="ticket-text">Ticket</span>
+							<span class="__icon">
+								<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+									<use xlink:href="/icons/common-icons.svg#icon-arrow-down-new"></use>
+								</svg>
+							</span>
+						</div>
+						<!-- <div class="show-times">
+							Showtime<br>
+							<div class="least-showtimes">
+								<ul id="seatShtm"></ul>
+							</div>
+							<div id="mrshtime" class="more-shows-container" style="display:none;">
+								more shows
+								<ul class="more-shows"  id="mrshow"></ul>
+							</div>
+						</div> -->
+					</div>
+					<div id="mobile-date-container" class="__event-date-container">
+						<div class="__event-date-wrapper">
+							<div class="__calendar-strip __calendar-strip-one"></div>
+							<div class="__calendar-strip __calendar-strip-two"></div>
+							<div class="__calendar-strip __calendar-strip-three"></div>
+							<div class="__calendar-strip __calendar-strip-four"></div>
+							<div class="__event-date-holder-one">
+								<p id="mobweekday">Today</p>
+								<div class="__event-date-holder-two">
+									<span id="mobdate">12</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="text-adult-movie" id="SetaErrMsg" style="display: none;">
+						<span class="error-text" id="SLNew_CenMsg" style="display:none;"></span>
+					</div>
+				</div>
+				
+			</div>
+			<div class="showtime-section">
+				<div class="show-times">
+					<span id="strDate" style="display: none;">Today, 12 Jul, 02:20 PM</span>
+					<div id="mrshtime" class="more-shows-container" style="">
+						<ul class="more-shows slick-initialized slick-slider" id="mrshow">
+		<div aria-live="polite" class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 666px; left: 0px;" role="listbox"><li id="32450" class="_active slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 64px;" tabindex="-1" role="option" aria-describedby="slick-slide00">
+			<a href="javascript:;" onclick="fnSelSh(event, 'PVBH', '32450', 'ET00063643', '02:20 PM', '');" tabindex="0">02:20 PM</a>
+		</li><li id="32436" class="slick-slide slick-active" data-slick-index="1" aria-hidden="false" style="width: 64px;" tabindex="-1" role="option" aria-describedby="slick-slide01">
+			<a href="javascript:;" onclick="fnSelSh(event, 'PVBH', '32436', 'ET00063643', '03:40 PM', '');" tabindex="0">03:40 PM</a>
+		</li><li id="32447" class="slick-slide slick-active" data-slick-index="2" aria-hidden="false" style="width: 64px;" tabindex="-1" role="option" aria-describedby="slick-slide02">
+			<a href="javascript:;" onclick="fnSelSh(event, 'PVBH', '32447', 'ET00063643', '04:40 PM', '');" tabindex="0">04:40 PM</a>
+		</li><li id="32451" class="slick-slide slick-active" data-slick-index="3" aria-hidden="false" style="width: 64px;" tabindex="-1" role="option" aria-describedby="slick-slide03">
+			<a href="javascript:;" onclick="fnSelSh(event, 'PVBH', '32451', 'ET00063643', '05:40 PM', '');" tabindex="0">05:40 PM</a>
+		</li><li id="32437" class="slick-slide slick-active" data-slick-index="4" aria-hidden="false" style="width: 64px;" tabindex="-1" role="option" aria-describedby="slick-slide04">
+			<a href="javascript:;" onclick="fnSelSh(event, 'PVBH', '32437', 'ET00063643', '07:00 PM', '');" tabindex="0">07:00 PM</a>
+		</li><li id="32448" class="slick-slide slick-active" data-slick-index="5" aria-hidden="false" style="width: 64px;" tabindex="-1" role="option" aria-describedby="slick-slide05">
+			<a href="javascript:;" onclick="fnSelSh(event, 'PVBH', '32448', 'ET00063643', '08:00 PM', '');" tabindex="0">08:00 PM</a>
+		</li><li id="32452" class="slick-slide slick-active" data-slick-index="6" aria-hidden="false" style="width: 64px;" tabindex="-1" role="option" aria-describedby="slick-slide06">
+			<a href="javascript:;" onclick="fnSelSh(event, 'PVBH', '32452', 'ET00063643', '09:00 PM', '');" tabindex="0">09:00 PM</a>
+		</li><li id="32444" class="slick-slide slick-active" data-slick-index="7" aria-hidden="false" style="width: 64px;" tabindex="-1" role="option" aria-describedby="slick-slide07">
+			<a href="javascript:;" onclick="fnSelSh(event, 'PVBH', '32444', 'ET00063643', '10:00 PM', '');" tabindex="0">10:00 PM</a>
+		</li><li id="32438" class="slick-slide slick-active" data-slick-index="8" aria-hidden="false" style="width: 64px;" tabindex="-1" role="option" aria-describedby="slick-slide08">
+			<a href="javascript:;" onclick="fnSelSh(event, 'PVBH', '32438', 'ET00063643', '10:30 PM', '');" tabindex="0">10:30 PM</a>
+		</li></div></div>
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	</ul>
+						<script async="" type="text/javascript">
+							var getSlickScript = '//in.bmscdn.com/static/js/slick-f50c7653e8.js';
+						</script>
+					</div>
+				</div>
+			</div>
+			<div class="header-container-grab-bite" style="display:none;"></div>
+			
+			<a id="dismiss" class="__dismiss" href="javascript:;" onclick="fnClCallout()">
+				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+					<use xlink:href="/icons/common-icons.svg#icon-cancel"></use>
+				</svg>
+			</a>
+					</header>
+		<!-- Seat layout sections starts here  -->
+		<section id="seatlayoutbox" class="bkf-container _seat" style="display: block;">
+			<!--double booking -->
+			<div id="cpnleft" style="width: 100%;">
+				<div class="__double-booking none">
+					Dear Customer, You already have a confirmed booking of <span class="tktQuantity"></span> for this show. Kindly check your email or SMS for the same and avoid re-booking.
+				</div>
+				<div class="seat-container">
+											<div class="rem-seats" style="display: none;">
+							<span></span>
+						</div>
+										<div class="__legends">
+						<span class="_available">Available</span>
+						<span class="_selected">Selected</span>
+						<span class="_booked">Booked</span>
+					</div>
+					<div class="popular-seat-msg-box __non-touch" style="display:none;">
+						<span class="info-icon">
+							<svg xml:space="preserve" enable-background="new 0 0 100 100" viewBox="0 0 100 100" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1" style="fill: rgba(0, 0, 0, 0.6);">
+								<use xlink:href="/icons/movies-icons.svg#icon-info"></use>
+							</svg>
+						</span>
+						<div class="pop-tool-tip">
+								The highlighted seats denote popular seats.
+						</div>
+					</div>
+					<div class="seats" id="seatcall">
+						<div class="__block">
+							<div id="layout" style="width: 563px;"><table style="width:100%px;" class="setmain" cellspacing="0" cellpadding="0"><tbody><tr><td class="PriceB1" colspan="2"><div class="seatP">PRIME.-Rs. 200.00</div><div id="Clear_0000000005" class="canset" style="margin: 12px 12px 0 0; display:none;"><img src="//in.bmscdn.com/bmsin/SLIMG/1_4.png?v1" style="margin-bottom:-4px;"><a href="javascript:;" onclick="fnClearSel('0000000005');" style="text-decoration:underline;">&nbsp;Clear Selaction</a></div><div id="MultiErr_0000000005" class="canset" style="margin: 12px 12px 0 0; display:none;"><span> X </span> &nbsp; You can't select multiple sets categories </div></td></tr><tr><td><div class="seatR Setrow1">N</div></td><td class="SRow1"><div class="seatI"><a class="_blocked" href="javascript:;">1</a></div><div class="seatI"><a class="_blocked" href="javascript:;">2</a></div><div class="seatI"><a class="_blocked" href="javascript:;">3</a></div><div class="seatI"><a class="_blocked" href="javascript:;">4</a></div><div id="A_1_05" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('A_1_05')">5</a></div><div id="A_1_06" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('A_1_06')">6</a></div><div id="A_1_07" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('A_1_07')">7</a></div><div id="A_1_08" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('A_1_08')">8</a></div><div id="A_1_09" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('A_1_09')">9</a></div><div id="A_1_10" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('A_1_10')">10</a></div><div class="seatI">&nbsp;</div><div id="A_1_12" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('A_1_12')">11</a></div><div id="A_1_13" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('A_1_13')">12</a></div><div id="A_1_14" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('A_1_14')">13</a></div><div id="A_1_15" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('A_1_15')">14</a></div><div id="A_1_16" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('A_1_16')">15</a></div><div class="seatI">&nbsp;</div></td></tr><tr><td><div class="seatR Setrow1">M</div></td><td class="SRow1"><div class="seatI">&nbsp;</div><div class="seatI">&nbsp;</div><div id="A_2_03" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('A_2_03')">1</a></div><div id="A_2_04" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('A_2_04')">2</a></div><div id="A_2_05" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('A_2_05')">3</a></div><div id="A_2_06" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('A_2_06')">4</a></div><div id="A_2_07" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('A_2_07')">5</a></div><div id="A_2_08" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('A_2_08')">6</a></div><div id="A_2_09" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('A_2_09')">7</a></div><div id="A_2_10" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('A_2_10')">8</a></div><div class="seatI">&nbsp;</div><div id="A_2_12" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('A_2_12')">9</a></div><div id="A_2_13" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('A_2_13')">10</a></div><div id="A_2_14" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('A_2_14')">11</a></div><div id="A_2_15" class="seatI"><a href="javascript:;" class="_available _selected" onclick="fnSelectSeat('A_2_15')">12</a></div><div id="A_2_16" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('A_2_16')">13</a></div><div id="A_2_17" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('A_2_17')">14</a></div></td></tr><tr><td><div class="seatR Setrow1">L</div></td><td class="SRow1"><div class="seatI">&nbsp;</div><div class="seatI">&nbsp;</div><div class="seatI"><a class="_blocked" href="javascript:;">1</a></div><div class="seatI"><a class="_blocked" href="javascript:;">2</a></div><div class="seatI"><a class="_blocked" href="javascript:;">3</a></div><div class="seatI"><a class="_blocked" href="javascript:;">4</a></div><div class="seatI"><a class="_blocked" href="javascript:;">5</a></div><div class="seatI"><a class="_blocked" href="javascript:;">6</a></div><div class="seatI"><a class="_blocked" href="javascript:;">7</a></div><div class="seatI"><a class="_blocked" href="javascript:;">8</a></div><div class="seatI">&nbsp;</div><div class="seatI"><a class="_blocked" href="javascript:;">9</a></div><div class="seatI"><a class="_blocked" href="javascript:;">10</a></div><div class="seatI"><a class="_blocked" href="javascript:;">11</a></div><div class="seatI"><a class="_blocked" href="javascript:;">12</a></div><div class="seatI"><a class="_blocked" href="javascript:;">13</a></div><div class="seatI"><a class="_blocked" href="javascript:;">14</a></div></td></tr><tr><td colspan="2">&nbsp;</td></tr><tr><td class="PriceB1" colspan="2"><div class="seatP">CLASSIC PLUS-Rs. 118.00</div><div id="Clear_0000000006" class="canset" style="margin: 12px 12px 0 0; display:none;"><img src="//in.bmscdn.com/bmsin/SLIMG/1_4.gif?v1" style="margin-bottom:-4px;"><a href="javascript:;" onclick="fnClearSel('0000000006');" style="text-decoration:underline;">&nbsp;Clear Selaction</a></div><div id="MultiErr_0000000006" class="canset" style="margin: 12px 12px 0 0; display:none;"><span> X </span> &nbsp; You can't select multiple sets categories </div></td></tr><tr><td><div class="seatR Setrow1">K</div></td><td class="SRow1"><div class="seatI">&nbsp;</div><div class="seatI">&nbsp;</div><div class="seatI"><a class="_blocked" href="javascript:;">1</a></div><div id="B_1_04" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('B_1_04')">2</a></div><div id="B_1_05" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('B_1_05')">3</a></div><div id="B_1_06" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('B_1_06')">4</a></div><div id="B_1_07" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('B_1_07')">5</a></div><div id="B_1_08" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('B_1_08')">6</a></div><div class="seatI"><a class="_blocked" href="javascript:;">7</a></div><div class="seatI"><a class="_blocked" href="javascript:;">8</a></div><div class="seatI">&nbsp;</div><div class="seatI"><a class="_blocked" href="javascript:;">9</a></div><div class="seatI"><a class="_blocked" href="javascript:;">10</a></div><div class="seatI"><a class="_blocked" href="javascript:;">11</a></div><div class="seatI"><a class="_blocked" href="javascript:;">12</a></div><div class="seatI"><a class="_blocked" href="javascript:;">13</a></div><div class="seatI"><a class="_blocked" href="javascript:;">14</a></div></td></tr><tr><td><div class="seatR Setrow1">J</div></td><td class="SRow1"><div class="seatI">&nbsp;</div><div class="seatI">&nbsp;</div><div class="seatI"><a class="_blocked" href="javascript:;">1</a></div><div class="seatI"><a class="_blocked" href="javascript:;">2</a></div><div class="seatI"><a class="_blocked" href="javascript:;">3</a></div><div class="seatI"><a class="_blocked" href="javascript:;">4</a></div><div class="seatI"><a class="_blocked" href="javascript:;">5</a></div><div class="seatI"><a class="_blocked" href="javascript:;">6</a></div><div class="seatI"><a class="_blocked" href="javascript:;">7</a></div><div class="seatI"><a class="_blocked" href="javascript:;">8</a></div><div class="seatI">&nbsp;</div><div class="seatI"><a class="_blocked" href="javascript:;">9</a></div><div class="seatI"><a class="_blocked" href="javascript:;">10</a></div><div id="B_2_14" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('B_2_14')">11</a></div><div id="B_2_15" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('B_2_15')">12</a></div><div class="seatI"><a class="_blocked" href="javascript:;">13</a></div><div class="seatI"><a class="_blocked" href="javascript:;">14</a></div></td></tr><tr><td><div class="seatR Setrow1">H</div></td><td class="SRow1"><div class="seatI">&nbsp;</div><div class="seatI">&nbsp;</div><div id="B_3_03" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('B_3_03')">1</a></div><div id="B_3_04" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('B_3_04')">2</a></div><div id="B_3_05" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('B_3_05')">3</a></div><div id="B_3_06" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('B_3_06')">4</a></div><div id="B_3_07" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('B_3_07')">5</a></div><div id="B_3_08" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('B_3_08')">6</a></div><div class="seatI"><a class="_blocked" href="javascript:;">7</a></div><div class="seatI"><a class="_blocked" href="javascript:;">8</a></div><div class="seatI">&nbsp;</div><div class="seatI"><a class="_blocked" href="javascript:;">9</a></div><div class="seatI"><a class="_blocked" href="javascript:;">10</a></div><div id="B_3_14" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('B_3_14')">11</a></div><div id="B_3_15" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('B_3_15')">12</a></div><div id="B_3_16" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('B_3_16')">13</a></div><div id="B_3_17" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('B_3_17')">14</a></div></td></tr><tr><td><div class="seatR Setrow1">G</div></td><td class="SRow1"><div class="seatI">&nbsp;</div><div class="seatI">&nbsp;</div><div class="seatI">&nbsp;</div><div class="seatI">&nbsp;</div><div class="seatI">&nbsp;</div><div id="B_4_06" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('B_4_06')">1</a></div><div id="B_4_07" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('B_4_07')">2</a></div><div id="B_4_08" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('B_4_08')">3</a></div><div class="seatI"><a class="_blocked" href="javascript:;">4</a></div><div class="seatI"><a class="_blocked" href="javascript:;">5</a></div><div class="seatI">&nbsp;</div><div class="seatI"><a class="_blocked" href="javascript:;">6</a></div><div class="seatI"><a class="_blocked" href="javascript:;">7</a></div><div id="B_4_14" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('B_4_14')">8</a></div><div id="B_4_15" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('B_4_15')">9</a></div><div id="B_4_16" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('B_4_16')">10</a></div><div id="B_4_17" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('B_4_17')">11</a></div></td></tr><tr><td><div class="seatR Setrow1">F</div></td><td class="SRow1"><div class="seatI">&nbsp;</div><div class="seatI">&nbsp;</div><div class="seatI">&nbsp;</div><div class="seatI">&nbsp;</div><div class="seatI">&nbsp;</div><div id="B_5_06" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('B_5_06')">1</a></div><div id="B_5_07" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('B_5_07')">2</a></div><div id="B_5_08" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('B_5_08')">3</a></div><div id="B_5_09" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('B_5_09')">4</a></div><div id="B_5_10" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('B_5_10')">5</a></div><div class="seatI">&nbsp;</div><div id="B_5_12" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('B_5_12')">6</a></div><div id="B_5_13" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('B_5_13')">7</a></div><div id="B_5_14" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('B_5_14')">8</a></div><div id="B_5_15" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('B_5_15')">9</a></div><div id="B_5_16" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('B_5_16')">10</a></div><div id="B_5_17" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('B_5_17')">11</a></div></td></tr><tr><td><div class="seatR Setrow1">E</div></td><td class="SRow1"><div class="seatI">&nbsp;</div><div class="seatI">&nbsp;</div><div class="seatI">&nbsp;</div><div class="seatI">&nbsp;</div><div class="seatI">&nbsp;</div><div id="B_6_06" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('B_6_06')">1</a></div><div id="B_6_07" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('B_6_07')">2</a></div><div id="B_6_08" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('B_6_08')">3</a></div><div id="B_6_09" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('B_6_09')">4</a></div><div id="B_6_10" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('B_6_10')">5</a></div><div class="seatI">&nbsp;</div><div id="B_6_12" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('B_6_12')">6</a></div><div id="B_6_13" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('B_6_13')">7</a></div><div id="B_6_14" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('B_6_14')">8</a></div><div id="B_6_15" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('B_6_15')">9</a></div><div id="B_6_16" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('B_6_16')">10</a></div><div id="B_6_17" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('B_6_17')">11</a></div></td></tr><tr><td><div class="seatR Setrow1">D</div></td><td class="SRow1"><div class="seatI">&nbsp;</div><div class="seatI">&nbsp;</div><div class="seatI">&nbsp;</div><div class="seatI">&nbsp;</div><div class="seatI">&nbsp;</div><div id="B_7_06" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('B_7_06')">1</a></div><div id="B_7_07" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('B_7_07')">2</a></div><div id="B_7_08" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('B_7_08')">3</a></div><div id="B_7_09" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('B_7_09')">4</a></div><div id="B_7_10" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('B_7_10')">5</a></div><div class="seatI">&nbsp;</div><div id="B_7_12" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('B_7_12')">6</a></div><div id="B_7_13" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('B_7_13')">7</a></div><div id="B_7_14" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('B_7_14')">8</a></div><div id="B_7_15" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('B_7_15')">9</a></div><div id="B_7_16" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('B_7_16')">10</a></div><div id="B_7_17" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('B_7_17')">11</a></div></td></tr><tr><td colspan="2">&nbsp;</td></tr><tr><td class="PriceB1" colspan="2"><div class="seatP">CLASSIC.-Rs. 90.00</div><div id="Clear_0000000004" class="canset" style="margin: 12px 12px 0 0; display:none;"><img src="//in.bmscdn.com/bmsin/SLIMG/1_4.gif?v1" style="margin-bottom:-4px;"><a href="javascript:;" onclick="fnClearSel('0000000004');" style="text-decoration:underline;">&nbsp;Clear Selaction</a></div><div id="MultiErr_0000000004" class="canset" style="margin: 12px 12px 0 0; display:none;"><span> X </span> &nbsp; You can't select multiple sets categories </div></td></tr><tr><td><div class="seatR Setrow1">C</div></td><td class="SRow1"><div class="seatI">&nbsp;</div><div class="seatI">&nbsp;</div><div class="seatI">&nbsp;</div><div class="seatI">&nbsp;</div><div id="C_1_05" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('C_1_05')">1</a></div><div id="C_1_06" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('C_1_06')">2</a></div><div id="C_1_07" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('C_1_07')">3</a></div><div id="C_1_08" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('C_1_08')">4</a></div><div id="C_1_09" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('C_1_09')">5</a></div><div class="seatI">&nbsp;</div><div id="C_1_11" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('C_1_11')">6</a></div><div id="C_1_12" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('C_1_12')">7</a></div><div id="C_1_13" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('C_1_13')">8</a></div><div id="C_1_14" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('C_1_14')">9</a></div><div id="C_1_15" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('C_1_15')">10</a></div><div id="C_1_16" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('C_1_16')">11</a></div><div class="seatI">&nbsp;</div></td></tr><tr><td><div class="seatR Setrow1">B</div></td><td class="SRow1"><div class="seatI">&nbsp;</div><div class="seatI">&nbsp;</div><div class="seatI">&nbsp;</div><div class="seatI">&nbsp;</div><div id="C_2_05" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('C_2_05')">1</a></div><div id="C_2_06" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('C_2_06')">2</a></div><div id="C_2_07" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('C_2_07')">3</a></div><div id="C_2_08" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('C_2_08')">4</a></div><div id="C_2_09" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('C_2_09')">5</a></div><div class="seatI">&nbsp;</div><div id="C_2_11" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('C_2_11')">6</a></div><div id="C_2_12" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('C_2_12')">7</a></div><div id="C_2_13" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('C_2_13')">8</a></div><div id="C_2_14" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('C_2_14')">9</a></div><div id="C_2_15" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('C_2_15')">10</a></div><div id="C_2_16" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('C_2_16')">11</a></div><div class="seatI">&nbsp;</div></td></tr><tr><td><div class="seatR Setrow1">A</div></td><td class="SRow1"><div class="seatI">&nbsp;</div><div class="seatI">&nbsp;</div><div class="seatI">&nbsp;</div><div class="seatI">&nbsp;</div><div id="C_3_05" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('C_3_05')">1</a></div><div id="C_3_06" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('C_3_06')">2</a></div><div id="C_3_07" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('C_3_07')">3</a></div><div id="C_3_08" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('C_3_08')">4</a></div><div id="C_3_09" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('C_3_09')">5</a></div><div class="seatI">&nbsp;</div><div id="C_3_11" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('C_3_11')">6</a></div><div id="C_3_12" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('C_3_12')">7</a></div><div id="C_3_13" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('C_3_13')">8</a></div><div id="C_3_14" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('C_3_14')">9</a></div><div id="C_3_15" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('C_3_15')">10</a></div><div id="C_3_16" class="seatI"><a href="javascript:;" class="_available" onclick="fnSelectSeat('C_3_16')">11</a></div><div class="seatI">&nbsp;</div></td></tr></tbody></table></div>
+							<div class="screen-this-way">
+								<span class="__icon">
+									<svg xml:space="preserve" enable-background="new 0 0 100 100" viewBox="0 0 260 20" y="0px" x="0px" width="260px" height="20px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1" style="fill: rgba(0, 0, 0, 0.6);">
+										<use xlink:href="/icons/seatlayout-icons.svg#icon-screen"></use>
+									</svg>
+								</span>
+								<span class="__text">All eyes this way please!</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="__seat-action" style="display: block;">
+					<a id="btmcntbook" href="javascript:;" onclick="fnPkgCl();" class="btn _cuatro" style="display: inline-block;">Pay <span id="btnSTotal_reserve">Rs.200.00</span></a>
+					<a id="subSeat" href="javascript:;" onclick="fnsubSetSeats();" class="btn _cuatro" style="display:none;">Pay <span id="btnSTotal_reserve"></span></a>
+					<div class="text-unpaid _tooltip-top" id="btm-Un-SetaErrMsg">
+						<span class="__tip"></span>
+						<p class="laterMsgText" id="laterMsgText"></p>
+					</div>
+					<!-- <a id="prePay" class="btn _cuatro" onclick="fnPrePay();" href="javascript:;">Proceed To Payment</a> -->
+				</div>
+				<div class="bottom-screen">
+					<div class="screen-this-way">
+						<span id="scrImg" class="__text">All eyes this way please!</span>
+					</div>
+					<div class="__action">
+						<a id="btmcntbook" href="javascript:;" onclick="fnPkgCl();" class="btn _cuatro" style="display: inline-block;">Pay <span id="btnSTotal_reserve"></span></a>
+						<a id="btmsubSeat" href="javascript:;" onclick="fnsubSetSeats();" class="btn _cuatro" style="display:none;">Pay <span id="btnSTotal_reserve"></span></a>
+						<!-- <a id="prePay" class="btn _cuatro" onclick="fnPrePay();" href="javascript:;">Proceed To Payment</a> -->
+					</div>
+				</div>
+			</div>
+			<div id="cpnright" class="coupon_right" style="display: none;">
+				<div class="coupons_resp">
+					<div class="__respoverlay"></div>
+					<div class="__coupon_mobile_head" onclick="fnShowCPResp();">
+						<div class="__availcoupon">Coupons Available <span class="__new">NEW</span></div>
+						<div class="__arrowsvg">
+							<svg xml:space="preserve" enable-background="new 0 0 100 100" viewBox="0 0 100 100" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+								<use xlink:href="/icons/common-icons#icon-down-arrow"></use>
+							</svg>
+						</div>
+					</div>
+					<div class="coupons_respsection">
+					<!-- Coupons Details Section -->
+					<div class="coupons_detials">
+						<div class="overlay_box" style="display:block;">
+							<div id="selctSeat" class="__vertical-middle">
+								<h2>Select seats to unlock coupons</h2>
+								<svg version="1.1" id="Objects" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 200 100" style="enable-background:new 0 0 200 100;" xml:space="preserve">
+								<style type="text/css">
+									.st0{fill:#3C3C3B;}
+								</style>
+								<path class="st0" d="M73.6,35.8c-5.4,2.2-10.8,4.5-16.1,7c-4.5,1.4-9,2.9-13.5,4.3c-1.3,0.4-0.8,2.3,0.5,2c0.4-0.1,0.8-0.1,1.1-0.2
+									c0.1,0,0.1,0,0.2,0c0.1,0.1,0.2,0.1,0.4,0.2c0.2,0.1,0.4,0.2,0.6,0.3c-0.1,0.1-0.1,0.2-0.1,0.3c-0.1,0-0.1,0.1-0.2,0.1
+									c0,0-0.1,0-0.1-0.1c-1.1-0.6-2.1,1.1-1,1.7c0.1,0,0.1,0.1,0.2,0.1c0.2,0.3,0.5,0.5,0.9,0.5c1.5,0.8,3,1.7,4.6,2.5
+									c2.8,1.7,5.6,3.3,8.5,4.8c5.3,3,10.7,5.8,16.4,7.9c1,0.4,1.8-1.3,0.8-1.8c-0.4-0.2-0.9-0.5-1.3-0.7c0,0,0,0,0,0
+									c0.3,0.1,0.6,0.2,0.9,0.2c1.1,0.3,1.9-1.3,0.8-1.9c-0.9-0.4-1.7-0.8-2.6-1.3c-0.1-0.2-0.2-0.3-0.4-0.4c-0.8-0.4-1.5-0.8-2.3-1.2
+									c0.1,0,0.2-0.1,0.2-0.1c0.3-0.1,0.4-0.5,0.3-0.7c0-0.1-0.1-0.2-0.1-0.4c-0.2-0.8-1.4-0.5-1.2,0.3c-0.1-0.9-4.9-2.4-5.8-2.8
+									c-1.1-0.5-2.2-1-3.3-1.5c-2.4-1.3-4.9-2.5-7.4-3.8c2.2,0.1,4.5,0.3,6.7,0.4c31.4,2.9,63,2.6,94.5-0.2c1-0.1,1.1-1.7,0-1.6
+									c-1.2,0.1-2.3,0.2-3.5,0.2c2.9-0.5,5.4-1.6,4.2-4.5c-0.1-0.3-0.4-0.4-0.7-0.4c-32.9-0.3-65.8,0.6-98.7,2.4
+									c6.5-2.8,13.1-5.6,19.6-8.4c0.9-0.4,0.6-1.6-0.1-2c-0.2-0.6-0.7-1-1.3-0.8c-0.1,0-0.2,0.1-0.3,0.1C74.8,36,74.3,35.6,73.6,35.8z
+									 M133.1,51c4.4-0.1,8.8-0.3,13.1-0.5c0.1,0,0.3,0,0.5,0C142.1,50.7,137.6,50.9,133.1,51z M119.3,49.7c-4,0.1-8,0.1-12,0.1
+									c-4.3,0-8.7-0.1-13-0.1c12.4-0.3,24.7-0.5,37.1-0.8C127.3,49.1,123.3,49.4,119.3,49.7z M152.3,46.7c0.4,0,0.8,0.1,1.1,0.2
+									c0.3,0,0.5,0,0.8,0c-0.4,0.5-0.9,1-1.3,1.5c-0.7,0.3-2.1,0.2-2.9,0.2c-0.4,0-0.8,0-1.2,0.1c1.2-0.1,2.3-0.3,3.5-0.4
+									C153.1,48.2,153,47,152.3,46.7z M113.1,47.2c-9.2,0.2-18.4,0.5-27.6,0.9c-1.4,0-2.7,0.1-4.1,0.1C91.9,47.7,102.5,47.4,113.1,47.2z"></path>
+								</svg>
+							</div>
+							<div id="cpnloading" class="__vertical-middle" style="display:none;">
+								<h2></h2>
+							</div>
+							<div id="nocp" class="__vertical-middle __nocoupons" style="display: none;">
+								<h2></h2>
+								<span style="height: 50px; width: 50px;" class="__icon"><svg xml:space="preserve" enable-background="new 0 0 100 100" viewBox="0 0 100 100" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" id="Layer_1" version="1.1"><g><path d="M77.5,79.3c-1.6,0-3.4-3.4-3.4-7.8V48.7h0C73.9,35.2,63.3,24,49.4,21.6c-0.3-2.8-2.7-5-5.5-5s-5.3,2.2-5.5,5C24.3,24,13.7,35.2,13.6,48.7h0v22.7c0,4.5-1.8,7.8-3.4,7.8c-1.9,0-3.4,1.5-3.4,3.4c0,1.9,1.5,3.4,3.4,3.4h23.7c0.6,5,4.8,9,10,9s9.4-3.9,10-9h23.7c1.9,0,3.4-1.5,3.4-3.4C80.8,80.8,79.3,79.3,77.5,79.3z M43.8,18.8c1.5,0,2.8,1,3.2,2.5c-1.1-0.1-2.1-0.2-3.2-0.2s-2.2,0.1-3.2,0.2C41,19.8,42.3,18.8,43.8,18.8z M15.8,71.5V49c0-14.2,12.6-25.7,28-25.7s28,11.5,28,25.7v22.4c0,3.3,0.8,6,2,7.8H13.8C15,77.5,15.8,74.7,15.8,71.5z M43.8,92.8c-3.9,0-7.2-2.9-7.7-6.7h15.5C51,89.8,47.8,92.8,43.8,92.8zM77.5,83.8H10.2c-0.6,0-1.1-0.5-1.1-1.1s0.5-1.1,1.1-1.1h67.3c0.6,0,1.1,0.5,1.1,1.1S78.1,83.8,77.5,83.8z" fill="#1CBAB1"></path><path d="M50.6,63.6c-0.6,0-1.1,0.5-1.1,1.1c0,3.1-2.5,5.6-5.6,5.6s-5.6-2.5-5.6-5.6c0-0.6-0.5-1.1-1.1-1.1c-0.6,0-1.1,0.5-1.1,1.1c0,4.3,3.5,7.8,7.8,7.8s7.8-3.5,7.8-7.8C51.7,64.1,51.2,63.6,50.6,63.6z" fill="#1CBAB1"></path><path d="M34.9,56.9h-4.5c-0.6,0-1.1,0.5-1.1,1.1c0,0.6,0.5,1.1,1.1,1.1h4.5c0.6,0,1.1-0.5,1.1-1.1C36,57.4,35.5,56.9,34.9,56.9z" fill="#1CBAB1"></path><path d="M57.3,56.9h-4.5c-0.6,0-1.1,0.5-1.1,1.1c0,0.6,0.5,1.1,1.1,1.1h4.5c0.6,0,1.1-0.5,1.1-1.1C58.4,57.4,57.9,56.9,57.3,56.9z" fill="#1CBAB1"></path><polygon points="73.2,18.9 67.5,18.9 73.2,14 73.2,10.7 61.8,10.7 61.8,14 67.4,14 61.8,18.7 61.8,22.1 73.2,22.1" fill="#56798C"></polygon><polygon points="76.1,10.3 80.2,10.3 76,13.9 76,16.4 84.6,16.4 84.6,14 80.3,14 84.6,10.3 84.6,7.9 76.1,7.9" fill="#56798C"></polygon><polygon points="87.5,6.6 90.2,6.6 87.5,9 87.4,10.7 93.1,10.7 93.1,9.1 90.3,9.1 93.1,6.6 93.2,5 87.5,5" fill="#56798C"></polygon></g><path d="M-32.6-26.2c0-3,2.4-5.5,5.5-5.5v-13.4c0-3.4-2.7-6.1-6.1-6.1H-93c-3.4,0-6.1,2.7-6.1,6.1v13.4c3,0,5.5,2.4,5.5,5.5c0,3-2.4,5.5-5.5,5.5v13.4c0,3.4,2.7,6.1,6.1,6.1h59.8c3.4,0,6.1-2.7,6.1-6.1v-13.4C-30.2-20.7-32.6-23.2-32.6-26.2z" stroke-miterlimit="10" stroke-width="2" stroke="#1CBAB1" fill="#F4F4F4"></path></svg></span>
+							</div>
+						</div>
+						<div class="coupons_title">Free Discount Coupons For You</div>
+						<div class="coupons_types">
+							<div class="coupons_tyc">Choose <strong id="CpnCnt">2</strong> Coupons</div>
+							<span class="icon-refresh cpnRefresh" style="display:none;">
+								<div class="refOverlay"></div>
+							    Show More
+						    </span>
+
+						</div>
+						<div class="coupon_rules"><span class="__dis-icon"><svg xml:space="preserve" enable-background="new 0 0 100 100" viewBox="0 0 100 100" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1"><use xlink:href="/icons/buytickets-icons#icon-theatre-distance"></use></svg></span>Distance from cinema &nbsp;&nbsp; <b>*</b>Approximate Savings</div>
+						<div class="coupons_types coupons_typeScroll">
+							<div id="coupons_list" class="coupdiv"></div>
+															<span id="scrollTopBtn" class="icon-refresh cpnRefresh" style="display:none;">
+									<div class="refOverlay"></div>
+								    Show More
+							    </span>
+													</div>
+
+						<div class="coupon_rules ctnc_botrules">See the <a onclick="javascript:BMS.Misc.modal('seerulesTnc', 1);">T&amp;C's</a> that apply to all coupons.</div>
+					</div>
+
+
+					<!-- Ticket Details section -->
+					<div id="cpnsumm" class="bkf-order-summary-container" style="display: none;">
+						<div class="order-summary-section">
+							<div class="order-summary">
+								<span class="__circle-left"></span>
+								<span class="__circle-right"></span>
+								<input id="HCat" value="0059" type="hidden">
+								<h2></h2>
+								<span class="ordersum_highlight"></span>
+								<ul class="__details">
+									<li>
+										<div id="seatinfo" class="movie_name">-</div>
+										<div id="audi" class="movie_theatre">-</div>
+									</li>
+									<li class="_total-section">
+										<div class="flwidth">
+											<div>Ticket total</div>
+											<div>
+												<span id="CpnsubTT" class="__subtotal">Rs.200.00</span>
+											</div>
+										</div>
+										<div id="cpnmain" class="flwidth" style="display: none;">
+										<div id="cpndd" class="__fnb-section" style="display:none;">Coupons<a id="cpnAll" onclick="showCoupons('cpnAddList','cpnAll');" href="javascript:;"> Hide All</a></div><div id="cpnTotal"></div>
+											<ul id="cpnAddList"></ul>
+										</div>
+										<!-- <div class="flwidth coupa_code">Applied Code: 123 456 782</div> -->
+									</li>
+									<li class="_total-section">
+										<div>
+											Amount Payable
+										</div>
+										<div>
+											<span id="cpnttPrice" class="__amount-payable">Rs.200.00</span>
+										</div>
+									</li>
+									<!-- <li class="_total-section">
+										<div>
+											Amount Payable
+										</div>
+										<div><span class="__amount-payable">-</span></div>
+									</li> -->
+
+								</ul>
+								<!--<div class="__pay-now">
+									<a class="btn _cuatro">Pay Now</a>
+								</div>-->
+							</div>
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- add ons sections (such as fnb and bookasmile) starts here  -->
+		<section id="bksmile" class="bkf-container _add-ons struktur" style="display: none;">
+								<div class="fnb-offer-banner" style="display:none;"><img id="fnb-offerimage-summerybanner" src="//in.bmscdn.com/bmsin/fnb/offerbanner/web/web-offerbanner.jpg" alt="Offer Banner" onerror="this.src='//in.bmscdn.com/bmsin/fnb/offerbanner/web/web-offerbanner.jpg'"></div>
+						        <div id="fnbcont" class="add-ons-container">
+		        	<!-- Book A Smile Container -->
+					<div id="hdBksmile">
+						<div class="bas-container">
+							<div class="bas-wrapper">
+								<!-- Old image reuse -->
+								<!-- <div class="__cover-image wow">
+									<img alt="BOOK-A-SMILE" data-src="//in.bmscdn.com/webin/modal/bookasmile-01.jpg">
+								</div> -->
+								<div class="__cover-image wow" style="visibility: hidden; animation-name: none;">
+									<img alt="BOOK-A-SMILE" data-src="//in.bmscdn.com/webin/modal/bookasmile-03.jpg">
+									<!-- Cover for Women's Day -->
+									<!-- <img alt="BOOK-A-SMILE" data-src="//in.bmscdn.com/webin/modal/bookasmile-02.jpg" src="//in.bmscdn.com/webin/modal/bookasmile-02.jpg"> -->
+								</div>
+								<div id="BksmileOver" class="__overlay"></div>
+								<div class="content-container">
+									<div class="__content">
+										<aside class="bas-logo-container none">
+											<!-- <a class="__logo" href="http://in.bookmyshow.com/donation" title="BookASmile"> -->
+			                                   	<svg width="175" height="55">
+			                                        <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="//in.bmscdn.com/webin/common/icons/bookasmile.svg" width="175" height="55"></image>
+			                                   	</svg>
+			                              	<!-- </a> -->
+			                              	<span class="__tagline">CREATING SMILES FOR MILES</span>
+			                              	<span class="__power">POWER OF 1</span>
+			                              	<span class="__choice">The choice is yours</span>
+										</aside>
+										<!-- <aside class="bas-cover-details">
+											<h2 class="__head-text">A Day At The Movie..</h2>
+											<p class="__para-text">might be your favorite timepass but for some it is <br> a far-fetched dream. We along with an NGO strive to make their dream a reality.<a href="/donation/" target="_blank" class="__read-more"> Read More</a></p>
+										 -->	<!-- <div class="donation-note">
+												<p class="__donate">
+													<input id="FLDonation" type="checkbox" class="__green-checkbox" name="rsCheck" value="Rs">
+													<label for="FLDonation">
+			                                            <span class="__tick">
+			                                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+			                                                    <use xlink:href="/icons/payments-icons.svg#icon-tick"></use>
+			                                                </svg>
+			                                            </span><span>Add </span><span id="spnSmile">Re. 1 </span> to your transaction as a donation.
+			                                        </label>
+			                                    </p>
+											</div> -->
+										<!-- </aside> -->
+<!-- 										<aside class="bas-cover-details">
+											<h2 class="__head-text">A Day At The Movie..</h2>
+											<p class="__para-text">might be your favorite timepass but for some it is <br> a far-fetched dream. We along with an NGO strive to make their dream a reality.<a href="/donation/" target="_blank" class="__read-more"> Read More</a></p> -->
+											<!-- <div class="donation-note">
+												<p class="__donate">
+													<input id="FLDonation" type="checkbox" class="__green-checkbox" name="rsCheck" value="Rs">
+													<label for="FLDonation">
+			                                            <span class="__tick">
+			                                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+			                                                    <use xlink:href="/icons/payments-icons.svg#icon-tick"></use>
+			                                                </svg>
+			                                            </span><span>Add </span><span id="spnSmile">Re. 1 </span> to your transaction as a donation.
+			                                        </label>
+			                                    </p>
+											</div> -->
+										<!-- </aside> -->
+									</div>
+								</div>
+																	<div class="__bas-tnc-block">
+										<h3>Disclaimer</h3>
+										<div class="__left">
+											1. Contributions once made cannot be refunded or cancelled.<br><br>
+											2. Big Tree Entertainment Pvt Ltd (BEPL) is facilitating the transactions on the platform <a target="_blank" href="https://in.bookmyshow.com">www.in.bookmyshow.com</a> The proceeds of the same will be used for the benefit of certain sections of public / charitable purposes (“Purpose”). <br><br>
+											3. BEPL may at its discretion either (i) donate the proceeds collected to entities, persons, organisations, trusts engaged in activities directly related in the furtherance of the  Purpose (ii) by directly undertaking/engaging in activities which are related to the Purpose .<br><br>
+											4. Persons, entities, organisations, Trusts to whom BEPL makes such voluntary contributions have represented to BEPL that the end use of such contributions will only be towards the Purpose.
+										</div>
+										<div class="__right">
+											5. BEPL expressly disclaims any and all liability and assumes no responsibility whatsoever for consequences resulting from any actions or inactions of any other person, entity, and organisation or trust that it may engage with. <br><br>
+											6. By proceeding to donate the money, you do so at your own risk and expressly waive any and all claims, rights of action and/or remedies (under law or otherwise) that you may have against BEPL arising out of or in connection with the aforesaid transaction.<br><br>
+											7. BEPL will not be held responsible for the issuance of 80G certificate.<br><br>
+											8. For any queries, kindly write at <a target="_blank" href="mailto:helpdesk@bookmyshow.com">helpdesk@bookmyshow.com</a>.
+										</div>
+									</div>
+									<div class="__bas-info-block">
+										<div class="__block_top">
+											<p>BookASmile is a charity initiative run by India's leading online ticketing platform BookMyShow. Created with a vision to enrich the lives of the less fortunate (children, young adults, senior citizens and physically/mentally challenged individuals ) across India through the medium of Experiences &amp; Enjoyment.</p><br>
+										</div>
+										<div class="__block_top">
+											<h5>What We Do?</h5>
+											<p>We, at BookASmile are investing a lot of energies to create an inviting community to ensure that they can be privy to opportunities, by incorporating into their lives, activities and experiences from across genres like Sport, Cinema, Arts, Theatre &amp; Music. </p>
+										</div>
+									</div>
+															</div>
+						</div>
+						<div class="bkasmile-addon">
+							<p class="__donate">
+								<input id="FLDonation" class="__green-checkbox" name="rsCheck" value="Rs" type="checkbox">
+								<label for="FLDonation">
+	                                <span class="__tick">
+	                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+	                                        <use xlink:href="/icons/payments-icons.svg#icon-tick"></use>
+	                                    </svg>
+	                                </span>
+	                                <span><strong class="__bas-bold">ADD <span id="spnSmile">Re. 1 </span></strong> to your transaction as a donation.</span>
+	                                <span class="__uncheck">(<u>Uncheck if you do not wish to donate</u>)</span>
+	                               	<span id="basInfo" class="info"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve"><use xlink:href="/icons/common-icons.svg#icon-info"></use></svg></span>
+	                            </label>
+	                            <span class="basTNC" id="basTNC">
+	                            	<span class="__arrow" id="bas-tnc-arrow-down"></span>
+	                            	T&amp;C*
+	                            </span>
+	                        </p>
+							<div class="__bas-tnc-block-touch">
+								<h3>Disclaimer</h3>
+								<div class="__block">
+									1. Contributions once made cannot be refunded or cancelled.<br><br>
+									2. Big Tree Entertainment Pvt Ltd (BEPL) is facilitating the transactions on the platform <a target="_blank" href="https://in.bookmyshow.com">www.in.bookmyshow.com</a>. The proceeds of the same will be used for the benefit of certain sections of public / charitable purposes (“Purpose”). <br><br>
+									3. BEPL may at its discretion either (i) donate the proceeds collected to entities, persons, organisations, trusts engaged in activities directly related in the furtherance of the  Purpose (ii) by directly undertaking/engaging in activities which are related to the Purpose .<br><br>
+									4. Persons, entities, organisations, Trusts to whom BEPL makes such voluntary contributions have represented to BEPL that the end use of such contributions will only be towards the Purpose.  <br><br>
+									5. BEPL expressly disclaims any and all liability and assumes no responsibility whatsoever for consequences resulting from any actions or inactions of any other person, entity, and organisation or trust that it may engage with. <br><br>
+									6. By proceeding to donate the money, you do so at your own risk and expressly waive any and all claims, rights of action and/or remedies (under law or otherwise) that you may have against BEPL arising out of or in connection with the aforesaid transaction.<br><br>
+									7. BEPL will not be held responsible for the issuance of 80G certificate.<br><br>
+									8. For any queries, kindly write at <a target="_blank" href="mailto:helpdesk@bookmyshow.com">helpdesk@bookmyshow.com</a>.
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- <div class="ticket-type-wrapper struktur" id="TickType">
+						<h2 class="__heading-text"></h2>
+						<div class="ticket-type-container">
+							<aside class="type-ticket" id="shmticket" style="display: none;">
+								<div class="tt-block">
+									<div class="type-header">
+										<label for="m-ticket"></label>
+										<input type="radio" name="ticket-type" id="m-ticket" class="__mot-radio">
+										<div class="__mot-text">M-Ticket</div>
+										<input type="radio" class="__radio" id="mticket" name="tickettype">
+										<label for="mticket" class="__text">M-Ticket</label>
+									</div>
+									<div class="type-details">
+										<aside class="__icon">
+											<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+												viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+												<g>
+													<path d="M72,95H28c-2.1,0-3.8-1.7-3.8-3.8V8.8C24.2,6.7,25.9,5,28,5h44c2.1,0,3.8,1.7,3.8,3.8v82.3C75.8,93.3,74.1,95,72,95z M28,7
+													c-1,0-1.9,0.8-1.9,1.9v82.3c0,1,0.8,1.9,1.9,1.9h44c1,0,1.9-0.8,1.9-1.9V8.8C73.8,7.8,73,7,72,7H28z"></path>
+													<path d="M68.2,78.8H31.7c-1.1,0-1.9-0.9-1.9-1.9V16.4c0-1.1,0.9-1.9,1.9-1.9h36.4c1.1,0,1.9,0.9,1.9,1.9v60.4
+													C70.1,77.9,69.2,78.8,68.2,78.8z M68.1,16.4l-36.4,0.1l0.1,60.3l36.3-0.1V16.4z"></path>
+													<path d="M49.7,90.2c-2.5,0-4.5-2-4.5-4.5s2-4.5,4.5-4.5s4.5,2,4.5,4.5S52.2,90.2,49.7,90.2z M49.7,83.2c-1.4,0-2.5,1.1-2.5,2.5
+													s1.1,2.5,2.5,2.5c1.4,0,2.5-1.1,2.5-2.5S51.1,83.2,49.7,83.2z"></path>
+													<path d="M44.2,11.7h-1.6c-0.5,0-1-0.4-1-1s0.4-1,1-1h1.6c0.5,0,1,0.4,1,1S44.8,11.7,44.2,11.7z"></path>
+													<path d="M55.2,11.7h-6.5c-0.5,0-1-0.4-1-1s0.4-1,1-1h6.5c0.5,0,1,0.4,1,1S55.7,11.7,55.2,11.7z"></path>
+												</g>
+											</svg>
+										</aside>
+										<aside class="__text">
+											Download the m-Ticket on your mobile, no printout needed. Show the QR code at the cinema entrance.
+											<br>
+											<span class="__light">(Only for smartphone users)<br>
+											(No need to wait in line at the box office)</span>
+										</aside>
+									</div>
+								</div>
+							</aside>
+							<aside class="type-ticket" id="sheticket" style="display: none">
+								<div class="tt-block">
+									<header class="type-header">
+										<input type="radio" class="__radio" id="eticket" name="tickettype">
+										<label class="__text" for="eticket">E-Ticket</label>
+									</header>
+									<div class="type-details">
+										<aside class="__icon">
+											<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+												viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+												<g>
+													<path d="M72,95H28c-2.1,0-3.8-1.7-3.8-3.8V8.8C24.2,6.7,25.9,5,28,5h44c2.1,0,3.8,1.7,3.8,3.8v82.3C75.8,93.3,74.1,95,72,95z M28,7
+													c-1,0-1.9,0.8-1.9,1.9v82.3c0,1,0.8,1.9,1.9,1.9h44c1,0,1.9-0.8,1.9-1.9V8.8C73.8,7.8,73,7,72,7H28z"></path>
+													<path d="M68.2,78.8H31.7c-1.1,0-1.9-0.9-1.9-1.9V16.4c0-1.1,0.9-1.9,1.9-1.9h36.4c1.1,0,1.9,0.9,1.9,1.9v60.4
+													C70.1,77.9,69.2,78.8,68.2,78.8z M68.1,16.4l-36.4,0.1l0.1,60.3l36.3-0.1V16.4z"></path>
+													<path d="M49.7,90.2c-2.5,0-4.5-2-4.5-4.5s2-4.5,4.5-4.5s4.5,2,4.5,4.5S52.2,90.2,49.7,90.2z M49.7,83.2c-1.4,0-2.5,1.1-2.5,2.5
+													s1.1,2.5,2.5,2.5c1.4,0,2.5-1.1,2.5-2.5S51.1,83.2,49.7,83.2z"></path>
+													<path d="M44.2,11.7h-1.6c-0.5,0-1-0.4-1-1s0.4-1,1-1h1.6c0.5,0,1,0.4,1,1S44.8,11.7,44.2,11.7z"></path>
+													<path d="M55.2,11.7h-6.5c-0.5,0-1-0.4-1-1s0.4-1,1-1h6.5c0.5,0,1,0.4,1,1S55.7,11.7,55.2,11.7z"></path>
+												</g>
+											</svg>
+										</aside>
+										<aside class="__text">
+											Download the e-Ticket on your mobile, no printout needed. Show the QR code at the cinema entrance.
+											<br>
+											<span class="__light">(Only for smartphone users)<br>
+											(No need to wait in line at the box office)</span>
+										</aside>
+									</div>
+								</div>
+							</aside>
+							<aside class="type-ticket" id="shbox"  style="display:none">
+								<div class="tt-block">
+									<header class="type-header">
+										<input type="radio" id="box" name="tickettype" class="__radio">
+										<label for="box" class="__text">Box Office Pickup</label>
+										<div id="shbox" style="display:none">
+											<input type="radio" id="box" name="tickettype" style="display:none">
+											<label for="box"><strong>Box Office Pickup</strong><br>Select this option to pick your tickets from Box Office</label>
+										</div>
+									</header>
+									<div class="type-details">
+										<aside class="__icon">
+											<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+												viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+												<path d="M85.4,55.4h-5.8V6.2c0-0.6-0.5-1.1-1.1-1.1H21.5c-0.6,0-1.1,0.5-1.1,1.1v49.2h-5.8c-0.6,0-1.1,0.5-1.1,1.1v37.6
+												c0,0.6,0.5,1.1,1.1,1.1h70.9c0.6,0,1.1-0.5,1.1-1.1V56.5C86.5,55.9,86,55.4,85.4,55.4z M22.5,7.3h55v48.1H58V44.2c0-4.4-3.6-8-8-8
+												c-4.4,0-8,3.6-8,8v11.2H22.5V7.3z M55.9,55.4H44.1V44.2c0-3.2,2.6-5.9,5.9-5.9c3.2,0,5.9,2.6,5.9,5.9V55.4z M84.4,93H15.6V57.5h5.8
+												h21.6h13.9h21.6h5.8V93z"></path>
+											</svg>
+										</aside>
+										<aside class="__text">
+											Select this option to pick your tickets from Box Office
+										</aside>
+									</div>
+								</div>
+							</aside>
+						</div>
+					</div> -->
+		        	<!-- Food combo Container -->
+		        	
+						<div class="fnb-container" id="shfnb" style="display:none;">
+							<div class="fnb-section">
+								<div class="block">
+														            <h2 class="__heading-text-plus-red" id="grab-a-bite">Grab a <span>bite!</span><br><!--<span class="sub-head" id="text-none">Now get your favorite snack at a discounted price !!!</span>--></h2>
+						         						            <div class="exclusive-fullmenu-container" style="display:none;">
+		                                <div class="tabs-menu" onclick="exclFullmenuCategorization(this, 'EXCLUSIVE');"> EXCLUSIVE MENU </div>
+		                                <div class="tabs-menu" onclick="exclFullmenuCategorization(this, 'FULL');"> CINEMA MENU </div>
+                                    </div>
+                                                                        <span class="sub-head fc-text" id="text-none">Prebook Your Meal and<span class="highlight-text"> Save More!</span></span>
+                                                                        					           			<div class="fnb-filters" id="bkng-flow-filters" style="display:none;"></div>
+					           	    
+						            <div class="fnb-container" id="fnbcall"></div>
+						            <div class="fnb-error">Oops you have exceeded order limit.  Only 5 items per ticket </div>
+						            <!-- <p class="__note">Please collect your food from the counter</p> -->
+						            <!-- <div id="fnb_delivery_option" class="fnb-delivery-type-section" style="display:none;">
+						            	<h2>DELIVERY TYPE</h2>
+						            	<div class="fnb-delivery-type-container">
+						            		<div id="fnb_pickup_option" class="fnb-delivery-type" style="display:none;">
+							            		<input type="radio" name="delivery_type" onClick="fnShowSeatDeliveryOption('pick_up');" id="pick_up">
+							            		<label for="pick_up">
+							            			<strong>PICK UP</strong>
+							            			<span class="__text">
+							            				<i>
+			                                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+			                                                    <use xlink:href="/icons/seatlayout-icons.svg#icon-fnb-pickup"></use>
+			                                                </svg>
+			                                            </i>
+			                                            <span>Pick your favourite order anytime during the show</span>
+							            			</span>
+							            		</label>
+							            	</div>
+						            		<div id="fnb_seat_delivery_option" class="fnb-delivery-type" style="display:none;">
+						            			<input type="radio" name="delivery_type" onClick="fnShowSeatDeliveryOption('seat_delivery');" id="seat_delivery">
+							            		<label for="seat_delivery">
+							            			<strong>SEAT DELIVERY</strong>
+							            			<span class="__text">
+							            				<i>
+			                                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+			                                                    <use xlink:href="/icons/seatlayout-icons.svg#icon-fnb-deliver"></use>
+			                                                </svg>
+			                                            </i>
+			                                            <span>Order will be delivered at your seats on your selected time</span>
+							            			</span>
+							            		</label>
+							            	</div>
+							            	<div id="fnb_seat_interval_option" class="fnb-seat-options" style="display:none;">
+							            		<ul>
+						            				<li id="before_show">
+						            					<input type="radio" onClick="fnRemoveValidation();" id="before-show" name="delivery_options">
+							            				<label for="before-show">BEFORE SHOW</label>
+							            			</li>
+						            				<li id="at_interval">
+						            					<input type="radio" onClick="fnRemoveValidation();" id="at-interval" name="delivery_options">
+							            				<label for="at-interval">AT INTERVAL</label>
+							            			</li>
+							            		</ul>
+							            	</div>
+						            	</div>
+						            </div> -->
+						        </div>
+					        </div>
+				        </div>
+
+			       				        	<!-- Pay Later -->
+
+				<div id="ordPayLat" class="or-sum-pay-later">
+					<div class="top-block">
+						<div class="__head-title">Reserve A Seat</div>
+						<div class="__svg-sec">
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+						        <use xlink:href="/icons/buytickets-icons.svg#icon-unpaid"></use>
+						    </svg>
+						</div>
+						<div class="__note">
+							<p class="_bold">Please confirm your booking by Paying Online by <strong id="cutMin"></strong>.</p>
+							<p class="__alt-text">(If you do not confirm your booking will be cancelled automatically)</p>
+						</div>
+					</div>
+					<div class="bottom-block">
+						<div class="cancellation-policy">
+							<h3 class="__head-title">Cancellation Policy</h3>
+							<ul>
+								<li>You can cancel your booking upto <strong class="cutTime"></strong>.</li>
+								<li>You will not be charged for any cancellations.</li>
+								<li>In case you can’t confirm your booking by paying online till <strong class="cuthour"></strong>  before the show, your booking will be cancelled automatically.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+					<div class="bkf-notes">
+						<!--<span class="__note">Note</span>-->
+						<span id="fnb-flow-notes" class="__transaction-info" style="display:none;">Note:
+							<ol>
+								<li>Images are for representation purposes only</li>
+								<li>Prices inclusive of taxes</li>
+							</ol>
+						</span>
+						<span id="CPGR-3D" class="__transaction-info" style="display: none;">3D Movies : Customer need to pay additional charges at the box office for 3D glasses.</span>
+						<span id="FNSD-3D" class="__transaction-info" style="display: none;">For 3D Glasses an USAGE CHARGE (non-refundable) of Rs. 30 and DEPOSIT (refundable) of Rs. 20 will have to be paid per ticket at the Cinema.</span>
+						<span id="FNAM-3D" class="__transaction-info" style="display: none;">For 3D Glasses an USAGE CHARGE (non-refundable) of Rs. 30 and DEPOSIT (refundable) of Rs. 20 will have to be paid per ticket at the Cinema.</span>
+						<span id="FNAS-3D" class="__transaction-info" style="display: none;">For 3D Glasses an USAGE CHARGE (non-refundable) of Rs. 20 and DEPOSIT (refundable) of Rs. 100 will have to be paid per ticket at the Cinema.</span>
+						<span id="FNBH-3D" class="__transaction-info" style="display: none;">For 3D Glasses an USAGE CHARGE (non-refundable) of Rs. 20 and DEPOSIT (refundable) of Rs. 30 will have to be paid per ticket at the Cinema.</span>
+						<span id="FNBP-3D" class="__transaction-info" style="display: none;">For 3D Glasses an USAGE CHARGE (non-refundable) of Rs.30 and DEPOSIT (refundable) of Rs. 100 will have to be paid per ticket at the Cinema.</span>
+						<span id="FNCH-3D" class="__transaction-info" style="display: none;">For 3D Glasses an Usage DEPOSIT (refundable) of Rs. 20 will have to be paid per ticket at the Cinema.</span>
+						<span id="FNGW-3D" class="__transaction-info" style="display: none;">For 3D Glasses an USAGE CHARGE (non-refundable) of Rs. 20 and DEPOSIT (refundable) of Rs. 30 will have to be paid per ticket at the Cinema.</span>
+						<span id="FNKT-3D" class="__transaction-info" style="display: none;">For 3D Glasses an USAGE CHARGE (non-refundable) of Rs. 20 and DEPOSIT (refundable) of Rs. 30 will have to be paid per ticket at the Cinema.</span>
+						<span id="FNLK-3D" class="__transaction-info" style="display: none;">For 3D Glasses an USAGE CHARGE (non-refundable) of Rs. 20 and DEPOSIT (refundable) of Rs. 30 will have to be paid per ticket at the Cinema.</span>
+						<span id="FNPN-3D" class="__transaction-info" style="display: none;">For 3D Glasses an USAGE CHARGE (non-refundable) of Rs. 20 and DEPOSIT (refundable) of Rs. 30 will have to be paid per ticket at the Cinema.</span>
+						<span id="FNAN-3D" class="__transaction-info" style="display: none;">For 3D Glasses an USAGE CHARGE DEPOSIT (refundable) of Rs. 50 will have to be paid per ticket at the Cinema.</span>
+						<span id="FNCM-3D" class="__transaction-info" style="display: none;">For 3D Glasses an USAGE CHARGE DEPOSIT (refundable) of Rs. 100 will have to be paid per ticket at the Cinema.</span>
+						<span id="FNCO-3D" class="__transaction-info" style="display: none;">For 3D Glasses an USAGE CHARGE (non-refundable) of Rs.30 and DEPOSIT (refundable) of Rs.50 will have to be paid per ticket at the Cinema.</span>
+						<span id="FNBG-3D" class="__transaction-info" style="display: none;">For 3D Glasses an USAGE CHARGE (non-refundable) of Rs.30 and DEPOSIT (refundable) of Rs. 50 will have to be paid per ticket at the Cinema.</span>
+						<span id="FNJJ-3D" class="__transaction-info" style="display: none;">For 3D Glasses an USAGE CHARGE (non-refundable) of Rs.30 and DEPOSIT (refundable) of Rs. 20 will have to be paid per ticket at the Cinema.</span>
+						<div id="DTLP" class="__transaction-info" style="display: none;">
+							<ol>
+								<li><strong>1.</strong> Children above 2 years will require full ticket. They will not be allowed inside without tickets, and NO refund for tickets either.</li>
+								<li><strong>2.</strong> Water, Eatables, Cigarette, Paan, Tobacco, Lighter, Matchbox, Drinks, Alcohol, etc. shall <strong><i><u>STRICTLY NOT</u></i></strong> be permitted inside the premises.</li>
+								<li><strong>3.</strong> Patrons under influence of alcohol shall <strong><i><u>STRICTLY NOT</u></i></strong> be permitted inside the premises.</li>
+							</ol>
+						</div>
+							<span id="dChildNote3Yrs" class="__transaction-info" style="display:none;">
+							<!-- Children 3 years and above will require a separate ticket. -->
+							Kids above the age of 3 years will be charged separately.
+						</span>
+						<span id="dFNote" class="__transaction-info" style="display:none; text-align:justify;">
+							<strong>Please Note: For 3D glasses: </strong>
+							<br>
+							Bangalore: Rs.30 (non-refundable usage charge) collected online as 'additional charges' &amp; Rs.50 refundable deposit payable at the cinema<br>
+							Bhopal: Rs.20 (non-refundable usage charge) collected online as 'additional charges' &amp; Rs.100 refundable deposit payable at the cinema<br>
+							Other centers: Rs.20 OR 30 (non-refundable usage charge) &amp; Rs.50 OR 100 (refundable deposit) payable at the cinema.<br>
+						</span>
+						<span class="__transaction-info" id="fdNote" style="display:none;">
+							Bring along your confimation printout to collect the food combo.
+						</span>
+						<span class="__transaction-info" id="dABICNote" style="display: none;">
+							Ticket Categories with Massage/Recliner feature and/or 3D movies may incur an extra charge. Please check the exact amount on the payment page before proceeding
+						</span>
+						<span class="__transaction-info" id="dPrintSMSCompulsoryNote" style="display: none;">
+							Customers have to carry the printout and SMS of the booking confirmation in order to collect the tickets at the Booking Counter without which the cinema will not issue tickets.
+						</span>
+						<span class="__transaction-info" id="dPrintOutComp" style="display: none;">
+							Printout is Mandatory in order to collect the tickets at the Booking Counter.
+						</span>
+						<span class="__transaction-info" id="dPrsdNote" style="display: none;">An amount of ₹ 20/- per head shall be charged towards the hiring of 3D glasses for 3D movies and the same has to be paid at box office while you collect your tickets.</span>
+						<span id="spNote" class="__transaction-info">
+																												<!--An Internet handling fee (per ticket) will be levied. Check the same before completing the transaction.-->
+						</span>
+						<span id="dFunChandigarhFreePepsi" class="__transaction-info" style="display: none;">
+							<!--Free 300ml Pepsi with every ticket purchased. To be collected from the Box Office. Offer valid till stocks last. T&amp;C apply.-->
+						</span>
+						<span class="__transaction-info" style="color:red;display: none;" id="dPrasadsLargeNotImax">
+							Please note that the movies being played on PRASADS LARGE SCREEN are not an IMAX presentation.
+						</span>
+						<span id="spAjantaTheaterNotes" class="__transaction-info" style="display:none;">
+							Print out compulsory while exchanging your tickets.<br>
+							Booked tickets will not have allocated seats.<br>
+							Seats are alloted on the basis of first come first serve.<br>
+							Collect the tickets 30 mins prior to the show.<br>
+						</span>
+						<div class="__transaction-info" id="dPrithviNotes" style="display: none;">
+							<strong>Important Notes: </strong>
+							<ol style="margin: 5px 0 0 20px; list-style-type: decimal;">
+								<li>The No Late Admittance rule will be strictly enforced. Kindly arrive early.</li>
+								<li>The Right of Admission is reserved.</li>
+								<li>After purchase, no tickets will be refunded or exchanged.</li>
+								<li>Children below the age of 6 years will not be allowed to enter.</li>
+								<li>In case of a children's show, children below the age of 3 years will not be allowed to enter.</li>
+								<li>Vehicles cannot be parked inside Janki Kutir.</li>
+								<li>The Pay &amp; Park, located opposite Mahesh Lunch Home, can be used for parking.</li>
+							</ol>
+						</div>
+						<div class="__transaction-info" id="inoxnotes" style="display: none;">
+							Inox T&amp;C:
+							<ul style="margin: 5px 0 0 8px; list-style-type: decimal;">
+								<li>Children above the age of 3 will need a separate ticket ,children will not be allowed in Adult movie .</li>
+								<li>Please carry a valid age proof for A rated movies -18 years and over only would be given entry .</li>
+								<li>Tickets are not refundable or transferable .</li>
+								<li>Outside food and beverages are not allowed ,Right of admission is reserved.</li>
+							</ul>
+						</div>
+						<span class="__transaction-info" id="d3DNoteOS" style="display: none;">For 3D Glasses a refundable/non-refundable amount may have to be paid per ticket at the cinema. The exact amount will be intimated at the cinema.<br></span>
+						<span id="unpaNote" class="__transaction-info" style="display:none;">
+							1. An internet handling fee will be levied. Please check the same before completing the transaction.<br>
+							<!-- 2. You can only pay via Cash at the box office. Credit and Debit cards will not be accepted. Please carry change for quicker and hassle free payment at the box office. <br/>-->
+							2. You can only pay online to confirm your booking upto <strong class="cuthour"></strong> before the show.<br>
+						</span>
+					</div>
+				</div>
+				<!-- Order summary section -->
+
+				<div class="bkf-order-summary-container">
+                    <div class="order-summary-section">
+                    	<div class="order-summarywrap">
+	                        <div class="order-summary">
+	                            <span class="__circle-left"></span>
+	                            <span class="__circle-right"></span>
+	                            <h2>Booking Summary</h2>
+
+	                            <ul class="__details">
+	                                <li>
+	                                	<div>
+	                                        <p id="naGstBrkp">
+		                                        <span class="__up-icon up-icon-tax" onclick="showTaxBreakup('show', this)">
+													<svg width="100%" height="100%" version="1.1" xmlns="//www.w3.org/2000/svg" xmlns:xlink="//www.w3.org/1999/xlink" x="0px" y="0px" enable-background="new 0 0 100 100" xml:space="preserve">
+													<use xlink:href="/icons/fnb-icons.svg#icon-downwards"></use></svg>
+												</span>
+												<span class="__down-icon down-icon-tax" onclick="showTaxBreakup('hide', this)" style="display:none;">
+													<svg width="100%" height="100%" version="1.1" xmlns="//www.w3.org/2000/svg" xmlns:xlink="//www.w3.org/1999/xlink" x="0px" y="0px" enable-background="new 0 0 100 100" xml:space="preserve">
+													<use xlink:href="/icons/fnb-icons.svg#icon-dropdown"></use></svg>
+												</span>
+											</p>
+	                                        <span class="__ticket-cat">
+	                                        <span id="TickCat" class="__seat-type">-</span>
+		                                        <br><span id="audiInfo">-</span>
+		                                    </span>
+	                                    </div>
+	                                    <div><span id="seatPri" class="__seat-price">-</span></div>
+	                                    <div class="__breakdown __gstchen" id="HandlingGstChenFeeBreakdown"></div>
+	                                </li>
+	                                <!-- <li class="_total-section">
+	                                    <div>
+	                                        Sub total
+	                                    </div>
+	                                    <div><span id="subTT" class="__sub-total">-</span></div>
+	                                </li> -->
+	                                <li>
+	                                    <div>
+	                                        <p>
+	                                        <span class="__up-icon up-icon-tax" onclick="showTaxBreakup('show', this)">
+												<svg width="100%" height="100%" version="1.1" xmlns="//www.w3.org/2000/svg" xmlns:xlink="//www.w3.org/1999/xlink" x="0px" y="0px" enable-background="new 0 0 100 100" xml:space="preserve">
+												<use xlink:href="/icons/fnb-icons.svg#icon-downwards"></use></svg>
+											</span>
+											<span class="__down-icon down-icon-tax" onclick="showTaxBreakup('hide', this)" style="display:none;">
+												<svg width="100%" height="100%" version="1.1" xmlns="//www.w3.org/2000/svg" xmlns:xlink="//www.w3.org/1999/xlink" x="0px" y="0px" enable-background="new 0 0 100 100" xml:space="preserve">
+												<use xlink:href="/icons/fnb-icons.svg#icon-dropdown"></use></svg>
+											</span>
+	                                        <span class="txt_brkp">Internet handling fees</span>
+	                                    </p></div>
+	                                    <div><span id="bkfee">-</span></div>
+	                                    <div class="__breakdown" id="intHandlingFeeBreakdown"></div>
+	                                </li>
+	                                <!-- <li class="txtServiceTaxShowHide">
+										<p class="__show">
+											Show tax breakup
+											<span class="__icon-arrow">
+									  			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+												  <use xlink:href="/icons/common-icons.svg#icon-arrow-down-new"></use>
+												</svg>
+									  		</span>
+									  	</p>
+										<p class="__hide">
+											Hide tax breakup
+											<span class="__icon-arrow">
+									  			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+												  <use xlink:href="/icons/common-icons.svg#icon-go-to-top"></use>
+												</svg>
+									  		</span>
+									  	</p>
+	                                </li> -->
+	                                <li id="dOtherCharges" style="display:none;"></li>
+	                                 <li class="_total-section">
+	                                    <div>
+	                                        Sub total
+	                                    </div>
+	                                    <div><span id="subTT" class="__sub-total">Rs.200.00</span></div>
+	                                </li>
+	                                <li id="fdd" class="__fnb-section" style="display:none;">
+	                                    <div>
+	                                    	<span class="__up-icon up-icon-fandb" onclick="showBeverages();" style="display:none;">
+												<svg version="1.1" xmlns="//www.w3.org/2000/svg" xmlns:xlink="//www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+												<use xlink:href="/icons/fnb-icons.svg#icon-downwards"></use></svg>
+											</span>
+											<span class="__down-icon down-icon-fandb" onclick="showBeverages();">
+												<svg version="1.1" xmlns="//www.w3.org/2000/svg" xmlns:xlink="//www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+												<use xlink:href="/icons/fnb-icons.svg#icon-dropdown"></use></svg>
+											</span>
+	                                    	Food &amp; Beverage
+	                                    	<!-- <a id="fdAll" onClick="showBeverages();" href ="javascript:;">Hide All</a> -->
+	                                    	<span class="__trash-icon" onclick="fnRemoveAllItems();">
+	                                    		<svg version="1.1" xmlns="//www.w3.org/2000/svg" xmlns:xlink="//www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+												<use xlink:href="/icons/fnb-icons.svg#icon-Remove"></use></svg>
+	                                    	</span>
+	                                    </div> <div id="fnbTotal"></div>
+	                                    	                                    	<p id="fnbDiscount" style="display:none;" class="__discount-text">You've got Rs. <span></span></p>
+	                                    	                                </li>
+	                                <li>
+	                                	<ul id="FCDtl" style="display:none;"></ul>
+	                                </li>
+	                                <li>
+	                                	<h3 id="cpnfdd" class="__fnb-section" style="display:none;">Coupons <a id="cpnfdAll" onclick="showCoupons('cpnDeta','cpnfdAll');" href="javascript:;">Hide All</a></h3>
+	                                </li>
+	                                <li>
+										<ul id="cpnDeta" style="display:none;"></ul>
+	                                </li>
+	                                <!-- <li id ="dOtherCharges" style="display:none;"></li> -->
+	                                <li id="OffDis" style="display:none;"></li>
+									<li id="basDtl" class="bas-card" style="display: none;">
+										<div class="__bas-logo">
+											<div class="__bas-checkbox">
+												<form class="struktur">
+													<div id="bascheckboxprocessing" class="_bas-processing" style="min-width: 0% !important;">
+														<div class="mini-loader" style="display: none;">
+															<div class="mini">
+															</div>
+														</div>
+														<input id="basCheckbox" checked="" style="left: 10px !important; top: 17px; position: absolute;" type="checkbox">
+														<label for="basCheckbox" class="__bas-logo">
+															<span class="__tick">
+																<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+																	<use xlink:href="/icons/common-icons.svg#icon-tick"></use>
+																</svg>
+															</span>
+															<svg class="__bas-logo-svg" width="76" height="38" style="margin-top: -10px !important;">
+																<image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="//in.bmscdn.com/webin/common/icons/bookasmile-logo.svg" width="76" height="38"></image>
+																<image id="bas-logo-summerybanner" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="//in.bmscdn.com/webin/common/icons/bookasmile-logo.svg" width="76" height="38"></image>
+															</svg>
+														</label>
+													</div>
+												</form>
+											</div>
+										</div>
+										<div class="__bas-price" id="basPrice">Rs. 1</div>
+										<div class="__bas-note">
+											<div style="display: inline-block; width: 100%;" id="basPriceDesc">Re.1 will be added to your transaction as a donation.</div>
+											<div style="text-align: left; float: left;">Re.1/1 Ticket</div>
+																							<a id="basAdditionalInfo" class="basAdditionalNote">
+													<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+														<use xlink:href="/icons/common-icons.svg#icon-info"></use>
+													</svg>
+												</a>
+																						<a id="basNote" class="basNote" style="margin-left: 0px !important;" href="javascript:;">T&amp;C</a>
+											<span class="__arrow" id="bas-tnc-arrow-down"></span>
+																							<div class="__bas-additional-content">
+													BookASmile is a charity initiative run by India's leading online ticketing platform BookMyShow. Created with a vision to enrich the lives of the less fortunate (children, young adults, senior citizens and physically/mentally challenged individuals ) across India through the medium of Experiences &amp; Enjoyment.<br><br>
+													<span>What We Do?</span><br>
+													We, at BookASmile are investing a lot of energies to create an inviting community to ensure that they can be privy to opportunities, by incorporating into their lives, activities and experiences from across genres like Sport, Cinema, Arts, Theatre &amp; Music.<br>
+												</div>
+																						<div class="__bas-tnc-block-touch">
+												<h3>Disclaimer</h3>
+												<div class="__block">
+													1. Contributions once made cannot be refunded or cancelled.<br><br>
+													2. Big Tree Entertainment Pvt Ltd (BEPL) is facilitating the transactions on the platform <a target="_blank" href="https://in.bookmyshow.com">www.in.bookmyshow.com</a>. The proceeds of the same will be used for the benefit of certain sections of public / charitable purposes (“Purpose”). <br><br>
+													3. BEPL may at its discretion either (i) donate the proceeds collected to entities, persons, organisations, trusts engaged in activities directly related in the furtherance of the  Purpose (ii) by directly undertaking/engaging in activities which are related to the Purpose .<br><br>
+													4. Persons, entities, organisations, Trusts to whom BEPL makes such voluntary contributions have represented to BEPL that the end use of such contributions will only be towards the Purpose.  <br><br>
+													5. BEPL expressly disclaims any and all liability and assumes no responsibility whatsoever for consequences resulting from any actions or inactions of any other person, entity, and organisation or trust that it may engage with. <br><br>
+													6. By proceeding to donate the money, you do so at your own risk and expressly waive any and all claims, rights of action and/or remedies (under law or otherwise) that you may have against BEPL arising out of or in connection with the aforesaid transaction.<br><br>
+													7. BEPL will not be held responsible for the issuance of 80G certificate.<br><br>
+													8. For any queries, kindly write at <a target="_blank" href="mailto:helpdesk@bookmyshow.com">helpdesk@bookmyshow.com</a>.
+												</div>
+											</div>
+										</div>
+									</li>
+	                               <!--  <li class="_total-section">
+	                                    <div>
+	                                        Amount Payable
+	                                    </div>
+	                                    <div><span id="ttPrice" class="__amount-payable">-</span></div>
+	                                </li> -->
+	                            </ul>
+	                            <!--<div class="__pay-now">
+	                                <a class="btn _cuatro">Pay Now</a>
+	                            </div>-->
+	                            <div class="gst_section" id="gstCurrentStateId" style="display:none;">
+		                        	<p>Your current state is <span id="gst-str-state" onclick="fnChangeGSTState();">...</span></p>
+		                        </div>
+	                        </div>
+	                        <div class="_total-section amt-payable">
+	                    		<div>
+	                            	Amount Payable
+	                        	</div>
+	                        	<div><span id="ttPrice" class="__amount-payable"></span></div>
+	                        </div>
+                        </div>
+                        <div id="seatErr" class="form-messages"></div>
+                        <div class="ticket-type" id="TickType" style="display: none;">
+                            <h3>Select Ticket Type</h3>
+                            <div id="shmticket" style="display:none" onclick="dispTicketType(this);">
+                                <input id="mticket" name="tickettype" type="radio">
+                                <label for="mticket">
+                                	<span class="border-line"></span>
+	                                <span class="m-ticket-icon">
+	                            		<svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" enable-background="new 0 0 100 100" xml:space="preserve">
+										<use xlink:href="/icons/fnb-icons.svg#icon-M-Ticket"></use>
+										</svg>
+	                            	</span>M-Ticket<br>
+	                                <!-- Download the m-Ticket on your mobile, no printout needed.  -->
+                                </label>
+                            </div>
+                          	                            <div id="shbox" style="display:none" onclick="dispTicketType(this);">
+
+                                <input id="box" name="tickettype" style="display:none" type="radio">
+                                <label for="box">
+                                	<span class="border-line"></span>
+	                                <span class="box-office-icon">
+	                            		<svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" enable-background="new 0 0 100 100" xml:space="preserve">
+										<use xlink:href="/icons/fnb-icons.svg#icon-Box-Office"></use>
+										</svg>
+	                            	</span>Box Office Pickup<br>
+                                	<!-- Select this option to pick your tickets from Box Office -->
+                                </label>
+                            </div><br>
+                            <div class="ticket-desc"></div>
+                        </div>
+                        <div class="__order-summary-btn">
+                            <!---<a id="prePay" class="btn _cuatro" onclick="fnPrePay();" href="javascript:;">Proceed To Payment</a>
+                            <a id="cntbook" href="javascript:;" onclick="fnPkgCl();" class="btn _cuatro" style="display:none;">continue</a>
+                            <a id="subSeat" href="javascript:;" onclick="fnsubSetSeats();" class="btn _cuatro" style="display:none;">continue</a>-->
+                            <a id="btnseatdisab" href="javascript:;" class="btn _disable" style="display:none;">Please wait...</a>
+                                                        	<a id="prePay" class="btn _cuatro" onclick="fnPrePay();" href="javascript:;" style="display: none;"><span class="__totalinbtn" style="display:none;">TOTAL: <span id="PayTotal"></span></span>Proceed</a>
+                                                        <a id="payLat" class="btn _cuatro" style="display:none;" onclick="fnBookTrans();" href="javascript:;">Confirm Reservation</a>
+                        </div>
+                        <div class="cancellation-policy-cri">
+							<span class="cancellation-policy-text"></span>
+							<span class="cancellation-policy-link" onclick="fnDispCancellationRules();"></span>
+						</div>
+            		</div>
+            	</div>
+		</section>
+	</div>
+	<!-- M-Ticket/Box-Office Pickup popup & Pick-up/Seat Delivery popup for Responsive -->
+	</section>

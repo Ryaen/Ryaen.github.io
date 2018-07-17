@@ -1,0 +1,44 @@
+<html>
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet' type='text/css'>
+        <link href="css/registration.css" rel="stylesheet" type="text/css" />
+<body>
+<div class='login'>
+  <h2>Ticket Booking</h2>
+  <form>
+  <input name='username' placeholder='Username' type='text'>
+  <input id='pw' name='password' placeholder='Password' type='password'>
+  <input name='email' placeholder='E-Mail Address' type='text'>
+<select>
+  <option value="" default selected hidden>Select Your Age</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+</select>
+<select>
+    <option value="row-selection" default selected hidden>Select Ticket</option>
+    <option value="1">Front Row</option>
+    <option value="2">Mid-Row</option>
+    <option value="3">Last Row</option>
+  </select>
+  <select>
+    <option value="numberoftickets" default selected hidden>Select Number Of Tickets</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+  </select>
+  <div class='agree'>
+    <input id='agree' name='agree' type='checkbox'>
+    <label for='agree'></label>Accept rules and conditions
+  </div>
+  <input class='animated' type='submit' value='Pay'>
+  <a class='forgot' href='#'>Already have an account?</a>
+  </form>
+</div>
+
+</body>
+</html>
