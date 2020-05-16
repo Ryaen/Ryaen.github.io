@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script type = "text/javascript">
+window.onload = function () {
+   // Initialising the canvas
+var canvas = document.querySelector('canvas'),
+    ctx = canvas.getContext('2d');
+canvas.addEventListener('click', function() { window.location.href = 'sakura.html'}, false);
+
+// Setting the width and height of the canvas
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+// Setting up the letters
+var letters = 'NIDHI'
+letters = letters.split('');
+
+// Setting up the columns
+var fontSize = 15,
+    columns = canvas.width / fontSize;
+
+// Setting up the drops
+var drops = [];
+for (var i = 0; i < columns; i++) {
+  drops[i] = 1;
+}
+
+var colours = ["#FFDB58","#00FF00", "#FF7F00", "#FF0000","#0000FF"]
+var cl = colours.length;
+// Setting up the draw function
+function draw() {
+  ctx.fillStyle = 'rgba(0, 0, 0, .1)';
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+  for (var i = 0; i < drops.length; i++) {
+    var text = letters[Math.floor(Math.random() * letters.length)];
+    ctx.fillStyle = colours[i%cl];
+    ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+    drops[i]++;
+    if (drops[i] * fontSize > canvas.height && Math.random() > .95) {
+      drops[i] = 0;
+    }
+  }
+}
+
+// Loop the animation
+setInterval(draw, 33);
+}
+    </script>
+    <style>
+* {margin: 0; padding: 0}
+body {background: #000;}
+canvas {display: block;}
+    </style>
+      <title>Nidhi</title>
+   </head>
+<body>
+<canvas id ="clk">
+            
+</canvas>
+   </body>
+</html>
